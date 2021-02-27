@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 360 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-6100,-100)">
+        <g transform="matrix(1,0,0,1,6000,0)">
+            <g id="Button--Notification-" serif:id="Button (Notification)" transform="matrix(1.45455,0,0,1.45455,107.273,-2430.91)">
+                <g id="Descriptor" transform="matrix(0.6875,0,0,0.6875,-417.5,1698.75)">
+                    <g id="Background" transform="matrix(0.947151,0,0,1.19271,-519.755,-1936)">
+                        <rect x="1277.26" y="1673.5" width="285.066" height="150.917" style="fill:rgb(115,115,115);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1108.89,-9.16404)">
+                        <path id="Text" d="M1982.81,169.164L1975.47,169.164L1974.43,137.664L1983.84,137.664L1982.81,169.164ZM1974.28,178.883C1974.28,177.466 1974.73,176.305 1975.62,175.398C1976.52,174.492 1977.68,174.039 1979.12,174.039C1980.54,174.039 1981.69,174.492 1982.59,175.398C1983.49,176.305 1983.93,177.466 1983.93,178.883C1983.93,180.279 1983.49,181.424 1982.61,182.32C1981.72,183.216 1980.56,183.664 1979.12,183.664C1977.66,183.664 1976.49,183.216 1975.61,182.32C1974.72,181.424 1974.28,180.279 1974.28,178.883Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                </g>
+                <g id="Button" transform="matrix(1.03125,0,0,1.03125,-2170.63,1678.13)">
+                    <g id="Background1" serif:id="Background" transform="matrix(0.851935,0,0,0.851935,1769.96,-1401.9)">
+                        <circle cx="457.834" cy="1786.41" r="70.428" style="fill:rgb(196,58,58);"/>
+                    </g>
+                    <g id="Background2" serif:id="Background" transform="matrix(0.681548,0,0,0.681548,1847.96,-1097.52)">
+                        <circle cx="457.834" cy="1786.41" r="70.428" style="fill:white;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

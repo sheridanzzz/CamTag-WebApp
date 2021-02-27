@@ -1,0 +1,87 @@
+.content {
+  position: absolute;
+  z-index: 1;
+
+  top: 5vh;
+  left: 5vw;
+
+  height: 80vh;
+  width: 90vw;
+
+  background: hsla(0, 0%, 0%, 100%);
+  padding: 15px;
+
+  overflow-y: auto;
+
+  display: grid;
+  grid-row: 1fr;
+  grid-column: auto;
+  grid-gap: 2%;
+}
+
+.close {
+  position: absolute;
+  z-index: 1;
+
+  width: 90vw;
+  height: 10vh;
+
+  bottom: 5vh;
+  left: 5vw;
+}
+
+.grid-main-modal {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+
+    height: 75%;
+    width: 75%;
+
+    top: 12.5%;
+    left: 12.5%;
+
+    background: hsla(0, 0%, 0%, 60%);
+}
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    margin: 5px 0 0 -35px;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #bababa;
+    
+    border-radius: 100%;
+    display: inline-block;
+
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    animation-delay: -0.16s;
+}
+
+.accent {
+    color: hsl(0, 55%, 50%);
+    font-size: 100%;
+}
+
+li {
+    text-align: initial;
+    margin-left: 30px;
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}

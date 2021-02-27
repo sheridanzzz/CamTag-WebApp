@@ -1,0 +1,49 @@
+<div class="grid-main">
+    <!-- SCROLLABLE SETTINGS AREA -->
+    <div id="page-content">
+        <!-- TIME LIMIT -->
+        <div id="time-limit" class="page-sub-content">
+            <label id="time-limit-label">TIME LIMIT (MINS)</label>
+            <input id="time-limit-field" [(ngModel)]="timeLimitMins"/>
+        </div>
+        <!-- AMMO LIMIT -->
+        <div id="ammo-limit" class="page-sub-content">
+            <label id="ammo-limit-label">AMMO LIMIT</label>
+            <input id="ammo-limit-field" [(ngModel)]="settings.ammoLimit"/>
+        </div>
+        <!-- START TIMER -->
+        <div id="start-timer" class="page-sub-content">
+            <label id="start-timer-label">START TIMER (MINS)</label>
+            <input id="start-timer-field" [(ngModel)]="startDelayMins"/>        
+        </div>
+        <!-- AMMO TIMER -->
+        <div id="ammo-timer" class="page-sub-content">
+            <label id="ammo-timer-label">AMMO TIMER (MINS)</label>
+            <input id="ammo-timer-field" [(ngModel)]="replenishAmmoDelayMins"/>        
+        </div>
+        <!-- GAME MODE -->
+        <div id="game-mode" class="page-sub-content">
+            <label id="game-mode-label">GAME MODE</label>
+            <select id="game-mode-field" [(ngModel)]="settings.gameMode">
+                <option id="game-mode-core" value="CORE" selected>CORE</option>
+                <option id="game-mode-battle-royale" value="BR">BATTLE ROYALE</option>
+            </select>
+        </div>
+        <!-- LATE JOIN -->
+        <div id="late-join" class="page-sub-content">
+            <label id="late-join-label">LATE JOIN</label>
+            <input id="late-join-field" type="checkbox" [(ngModel)]="settings.isJoinableAtAnyTime"/>
+        </div>
+    </div>
+    <!-- APPLY BUTTON -->
+    <button id="apply-button" type="button" (click)="apply()">APPLY</button>
+    <!-- BACK -->
+    <button id="back-button" type="button" (click)="backButton()">
+        <img id="back-button-img" src="assets/back-button.svg" alt="Back Button" />
+    </button>
+</div>
+
+<!-- MAP SCREEN -->
+<div *ngIf="showMapModal" id="mapModal" class="modal">
+    <settings-map-page (coordinates)="setBRMap($event)" (close)="showMapModal = false"></settings-map-page>
+</div>

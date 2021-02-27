@@ -1,0 +1,24 @@
+<selfie-page [(imgURL)]="gameDetails.imgUrl" (acceptSelfie)="acceptSelfie()" (goBack)="location.back()" *ngIf="view == 1"></selfie-page>
+
+<settings-page *ngIf="view == 2" [settings]="gameDetails" (applySettings)="applySettings()" (goBack)="view = 1"></settings-page>
+
+<div *ngIf="view == 3">
+    <div class="grid-main">
+        <!-- USERNAME -->
+        <input id="username-field" type="text" placeholder="USERNAME" [(ngModel)]="gameDetails.nickname" (ngModelChange)="valid.playerName = gameDetails.nickname.length > 0"/>
+        <!-- CONTACT -->
+        <input id="contact-field" type="text" placeholder="EMAIL / MOBILE" [(ngModel)]="gameDetails.contact" (ngModelChange)="validateContact()"/>
+        <!-- CREATE GAME -->
+        <button id="create-button" type="button" [disabled]="!valid.playerName || !valid.contactID" (click)="createGame()">CREATE GAME</button>
+        <!-- BACK -->
+        <button id="back-button" type="button" (click)="view = 2">
+            <img id="back-button-img" src="assets/back-button.svg" alt="Back Button"/>
+        </button>
+        <!-- HELP -->
+        <button id="help-button" type="button" (click)="showHelp()">
+            <img id="help-button-img" src="assets/help-button.svg" alt="Help Button"/>
+        </button>
+    </div>
+</div>
+
+<verification-page [playerID]="playerID" (verified)="checkVerification($event)" (goBack)="unverified()" *ngIf="view == 4"></verification-page>

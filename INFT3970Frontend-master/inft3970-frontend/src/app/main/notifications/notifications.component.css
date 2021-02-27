@@ -1,0 +1,96 @@
+#notifications-panel {
+    position: absolute;
+    z-index: 1;
+
+    top: 5vh;
+    left: 5vw;
+
+    height: 65vh;
+    width: 90vw;
+
+    background: hsl(0, 0%, 45%);
+
+    overflow-y: auto;
+}
+
+.notification {
+    width: 86vw;
+
+    background: hsl(0, 0%, 15%);
+    padding: 5vw;
+    margin: 2vw;
+}
+
+.switch {
+    position: absolute;
+    z-index: 1;
+
+    bottom: 15vh;
+    left: 5vw;
+
+    width: 90vw;
+    height: 10vh;
+
+    background: hsl(0, 0%, 100%);
+}
+
+#hide-label {
+    position: absolute;
+    z-index: 2;
+
+    bottom: 25vh;
+    left: 5vw;
+
+    width: 90vw;
+    height: 5vh;
+
+    background: hsl(0, 0%, 45%);
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+
+    height: 70%;
+    width: 48%;
+
+    left: 2%;
+    bottom: 15%;
+
+    background: hsl(0, 0%, 45%);
+
+    transition: .4s;
+}
+
+input:checked + .slider:before {
+    background: hsl(0, 55%, 50%);
+    
+    transform: translateX(100%);
+}
+
+.close {
+    position: absolute;
+    z-index: 1;
+
+    width: 90vw;
+    height: 10vh;
+    
+    bottom: 5vh;
+    left: 5vw;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-6820,-1660)">
+        <g transform="matrix(1,0,0,1,6000,0)">
+            <g id="Button--Map-" serif:id="Button (Map)" transform="matrix(0.561275,0,0,1.06019,103.108,-114.222)">
+                <rect x="1277.26" y="1673.5" width="285.066" height="150.917" style="fill:rgb(115,115,115);"/>
+                <g id="Pin" transform="matrix(1.78166,0,0,0.943231,-183.703,111.511)">
+                    <g id="Background">
+                        <g transform="matrix(0.876996,0,0,0.876996,-944.74,207.995)">
+                            <circle cx="2103.48" cy="1726.35" r="41.049" style="fill:white;"/>
+                        </g>
+                        <g transform="matrix(0.737414,-5.14931e-17,3.41262e-17,-0.767371,-639.025,3103.65)">
+                            <path d="M2087.06,1717.1L2130.45,1800.5L2043.66,1800.5L2087.06,1717.1Z" style="fill:white;"/>
+                        </g>
+                    </g>
+                    <g id="Dot" transform="matrix(0.505959,0,0,0.505959,-158.933,853.744)">
+                        <circle cx="2092.92" cy="1716.06" r="23.717" style="fill:rgb(198,57,57);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

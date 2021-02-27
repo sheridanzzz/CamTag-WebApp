@@ -1,0 +1,12 @@
+<div class="grid-main">
+    <!-- ENTER CODE -->
+    <input id="verification-field" type="text" placeholder="ENTER CODE" [(ngModel)]="verificationCode" />
+    <!-- RESENT CODE -->
+    <button id="resend-button" type="button" (click)="resendCode()">RESEND CODE</button>
+    <!-- SUBMIT CODE -->
+    <button id="submit-button" type="button" class="primary-button" [disabled]="verificationCode.length != 5" (click)="verifyContact()">SUBMIT CODE</button>
+    <!-- BACK -->
+    <button id="back-button" type="button" (click)="back()">
+        <img id="back-button-img" src="assets/back-button.svg" alt="Back Button" />
+    </button>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-6420,-1620)">
+        <g transform="matrix(1,0,0,1,6000,0)">
+            <g id="Button--Camera-" serif:id="Button (Camera)" transform="matrix(1,0,0,1,-60,-120)">
+                <g id="Background" transform="matrix(1.70387,0,0,1.70387,-180.089,-1183.81)">
+                    <circle cx="457.834" cy="1786.41" r="70.428" style="fill:rgb(196,58,58);"/>
+                </g>
+                <g id="Foreground" transform="matrix(1.3631,0,0,1.3631,-24.0714,-575.048)">
+                    <circle cx="457.834" cy="1786.41" r="70.428" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

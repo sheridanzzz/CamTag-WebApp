@@ -1,0 +1,319 @@
+@media (max-aspect-ratio: 9/21) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. l3 l3 l3 l3 .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. rc rc rc rc .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 9/21) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. l3 l3 l3 l3 .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. rc rc rc rc .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 9/18) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. ."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. ."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. ."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. l3 l3 l3 l3 .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. rc rc rc rc .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 9/16) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. l3 l3 l3 l3 .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. rc rc rc rc .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. l3 l3 l3 l3 .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. rc rc rc rc .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. .. .. .. .. .. .. .. l3 l3 l3 l3 .. .. .. .. .. .. .. .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. .. .. .. .. .. .. .. rc rc rc rc .. .. .. .. .. .. .. .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 18/9) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. .. .. .. .. .. .. .. .. .. l3 l3 l3 l3 .. .. .. .. .. .. .. .. .. .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. .. .. .. .. .. .. .. .. .. rc rc rc rc .. .. .. .. .. .. .. .. .. .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+@media (min-aspect-ratio: 21/9) {
+    .grid-main {
+        grid-template-areas:
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. bb bb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. pc pc pc pc pc pc pc pc .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. sb sb sb sb sb sb sb sb .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .."
+        ".. l1 l1 l1 l1 .. .. .. .. .. .. .. .. .. .. .. .. .. .. l3 l3 l3 l3 .. .. .. .. .. .. .. .. .. .. .. .. .. .. l2 l2 l2 l2 .."
+        ".. gt gt gt gt .. .. .. .. .. .. .. .. .. .. .. .. .. .. rc rc rc rc .. .. .. .. .. .. .. .. .. .. .. .. .. .. gs gs gs gs .."
+        ".. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..";
+    }
+}
+
+#page-content {
+    grid-area: pc;
+
+    overflow-y: auto;
+}
+
+#start-button {
+    grid-area: sb;
+}
+
+#back-button {
+    grid-area: bb;
+}
+
+#game-type-label {
+    grid-area: l1;
+}
+
+#game-type {
+    grid-area: gt;
+}
+
+#game-state-label {
+    grid-area: l2;
+}
+
+#game-state {
+    grid-area: gs;
+}
+
+#room-code-label {
+    grid-area: l3;
+}
+
+#room-code {
+    grid-area: rc;
+}
+
+#player {
+    display: grid;
+
+    grid-template-columns: 1fr 6fr 1fr;
+
+    background: hsl(0, 0%, 45%);
+
+    margin-bottom: 2vh;
+}

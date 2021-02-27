@@ -1,0 +1,31 @@
+<div class="grid-main">
+    <!-- LIST OF PLAYERS -->
+    <div id="page-content">
+        <div id="header">
+            <span>PLAYER</span>
+            <span>KILLS</span>
+            <span>DEATHS</span>
+        </div>
+        <div *ngFor="let player of players" id="player" [ngClass]="{'is-disabled': player.isDisabled, 'is-eliminated': player.isEliminated, 'has-left-the-game': player.hasLeftGame}">
+            <span [ngClass]="{'has-left-the-game-text': player.hasLeftGame}">{{player.nickname | uppercase}}</span>
+            <span [ngClass]="{'has-left-the-game-text': player.hasLeftGame}">{{player.numKills}}</span>
+            <span [ngClass]="{'has-left-the-game-text': player.hasLeftGame}">{{player.numDeaths}}</span>
+        </div>
+    </div>
+    <!-- NEW BUTTON -->
+    <button id="new-button" *ngIf="gameState == 'COMPLETED'" (click)="leaveGame()" type="button">NEW GAME</button>
+    <span *ngIf="gameState != 'COMPLETED'" id="new-button">GAME WILL END AT {{endTime | date: 'HH:mm'}}</span>
+    <!-- BACK BUTTON -->
+    <button id="back-button" type="button" *ngIf="gameState != 'COMPLETED'" (click)="goBack()">
+        <img id="back-button-img" src="assets/back-button.svg" alt="Back Button" />
+    </button>
+    <!-- GAME TYPE -->
+    <label id="game-type-label">GAME TYPE</label>
+    <span id="game-type">{{gameType}}</span>
+    <!-- GAME TYPE-->
+    <label id="game-state-label">GAME STATE</label>
+    <span id="game-state">{{gameState}}</span>
+    <!-- ROOM CODE -->
+    <label id="room-code-label">ROOM CODE</label>
+    <span id="room-code">#{{roomCode | uppercase}}</span>
+</div>

@@ -1,0 +1,12 @@
+<div *ngIf="photoVotes.length > 0">
+    <div id="tag-panel">
+        <!-- TAG PICTURE -->
+        <label id="tag-label">TAG PICTURE</label>
+        <img id="tag-image" [src]="selectedVote.photo.photoDataURL" alt="Tag Picture"/>
+        <!-- SELFIE PICTURE -->
+        <label id="selfie-label">SELFIE PICTURE</label>
+        <img id="selfie-image" [src]="selectedVote.photo.photoOfPlayer.selfie" alt="Selfie Picture"/>
+    </div>
+    <button id="confirm-button" type="button" (click)="vote('true')">CONFIRM</button>
+    <button id="decline-button" type="button" (click)="vote('false')">DECLINE</button>
+</div>

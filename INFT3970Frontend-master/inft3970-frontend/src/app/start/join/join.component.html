@@ -1,0 +1,24 @@
+<selfie-page [(imgURL)]="playerImgUrl" (acceptSelfie)="acceptSelfie()" (goBack)="location.back()" *ngIf="view == 1"></selfie-page>
+
+<div *ngIf="view == 2">
+    <div class="grid-main">
+        <!-- USERNAME -->
+        <input id="username-field" type="text" placeholder="USERNAME" [(ngModel)]="playerName" (ngModelChange)="valid.playerName = playerName.length > 0" />
+        <!-- CONTACT -->
+        <input id="contact-field" types="text" placeholder="EMAIL / MOBILE" [(ngModel)]="contactID" (ngModelChange)="validateContact()" />
+        <!-- ROOM CODE -->
+        <input id="roomcode-field" types="text" placeholder="ROOM CODE" [(ngModel)]="roomCode" (ngModelChange)="valid.roomCode = roomCode.length > 0" />
+        <!-- JOIN GAME -->
+        <button id="join-button" type="button" [disabled]="!valid.roomCode || !valid.playerName || !valid.contactID" (click)="joinGame()">JOIN GAME</button>
+        <!-- BACK -->
+        <button id="back-button" type="button" (click)="view = 1">
+            <img id="back-button-img" src="assets/back-button.svg" alt="Back Button" />
+        </button>
+        <!-- HELP -->
+        <button id="help-button" type="button" (click)="showHelp()">
+            <img id="help-button-img" src="assets/help-button.svg" alt="Help Button" />
+        </button>
+    </div>
+</div>
+
+<verification-page [playerID]="playerID" (verified)="checkVerification($event)" (goBack)="unverified()" *ngIf="view == 3"></verification-page>

@@ -1,0 +1,76 @@
+<div class="spinner" [style.display]="loading ? 'block' : 'none'">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+</div>
+
+<!-- All other views are displayed through this element. This is where the router outputs the components it selects. -->
+<router-outlet></router-outlet>
+
+<!-- HELP PAGE -->
+<div *ngIf="showHelpModal" id="helpModal" class="modal" (click)="hideModal($event, 'helpModal')">
+    <div id="help-content" class="content">
+        <div style="text-align: left">
+            <span class="accent">Welcome to CamTag;</span> a photo-based mobile tag game that works by taking photos of one another to ‘tag’ them
+            and
+            earn points or eliminate them entirely.
+        </div>
+        <div style="text-align: left">
+            The object is to accumulate points via ‘tagging’ (taking a photo of) a fellow player, and having the
+            highest
+            score, or being the last player at the end of the game.
+
+        </div>
+        <div style="text-align: left">
+            Each ‘tag’ photo of a player is peer reviewed by the other players through a voting mechanism determining
+            if
+            the image is of the specified player, so please be honest!
+            Players have limited ammunition, therefore it is best to take the clearest photos possible.
+        </div>
+        <div style="text-align: left">
+            CamTag currently has two game modes - <span class="accent">Tag</span> and <span class="accent">Battle Royale.</span>
+        </div>
+        <div style="text-align: left">
+            <span class="accent">Tag:</span>
+            A fixed time limit is set, and at the end of the period the player with the most amount of points is the
+            winner.
+            Tag can be played over the course of 10 minutes to a maximum of 24 hours.
+        </div>
+        <div style="text-align: left">
+            <span class="accent">Battle Royale:</span>
+            The host determines a starting point and radius of the game zone, which will then shrink gradually and
+            linearly
+            as the game progresses. A player must remain within this zone in order to play, which will forcefully bring
+            the
+            players together over time.
+            Each player has a single life and a successful tag against them will have them eliminated.
+            Battle Royale can be player within a radius of any size.
+        </div>
+        <div style="text-align: left">
+            <span class="accent">Creating and joining a game:</span>
+            <ol>
+                <li>Press create game on the main menu.</li>
+                <li>Set the game parameters.</li>
+                <li>Enter your nickname.</li>
+                <li>Enter a phone number or email address.</li>
+                <li>Verify your contact method.</li>
+                <li>Create and join the game.</li>
+                <li>Share the lobby code to other players.</li>
+            </ol>
+        </div>
+        <div style="text-align: left">
+            To join a game, simply press the join button and follow similar steps to enter a lobby code.
+        </div>
+    </div>
+    <button id="close-help-button" class="close" (click)="showHelpModal = false">CLOSE</button>
+</div>
+
+<!-- MESSAGE PAGE -->
+<div *ngIf="showMessageModal" id="messageModal" class="modal">
+    <message-page (close)="showMessageModal = false"></message-page>
+</div>
+
+<!-- VOTING SCREEN -->
+<div *ngIf="showVotingModal" id="votingModal" class="modal">
+    <voting-page (close)="showVotingModal = false"></voting-page>
+</div>

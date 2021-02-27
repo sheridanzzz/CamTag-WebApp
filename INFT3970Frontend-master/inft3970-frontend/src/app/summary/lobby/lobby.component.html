@@ -1,0 +1,26 @@
+<div class="grid-main">
+    <!-- LIST OF PLAYERS -->
+    <div id="page-content">
+        <div *ngFor="let player of players" id="player">
+            <img id="selfie" [src]="player.smallSelfie" alt="Player Selfie" />
+            <span id="nickname">{{player.nickname}}</span>
+            <button id="kick-button" type="button" *ngIf="isHost && !player.isVerified" (click)="removePlayer(player.playerID)">&times;</button>
+        </div>
+    </div>
+    <!-- START BUTTON -->
+    <button *ngIf="isHost && gameState == 'IN LOBBY'" id="start-button" type="button" class="primary-button" (click)="beginGame()">START GAME</button>
+    <span *ngIf="gameState == 'STARTING'" id="start-button">Game will start at around {{startTime | date: 'HH:mm'}}</span>
+    <!-- BACK BUTTON -->
+    <button id="back-button" type="button" (click)="leaveGame()">
+        <img id="back-button-img" src="assets/back-button.svg" alt="Back Button" />
+    </button>
+    <!-- GAME TYPE -->
+    <label id="game-type-label">GAME TYPE</label>
+    <span id="game-type">{{gameType}}</span>
+    <!-- GAME TYPE-->
+    <label id="game-state-label">GAME STATE</label>
+    <span id="game-state">{{gameState}}</span>
+    <!-- ROOM CODE -->
+    <label id="room-code-label">ROOM CODE</label>
+    <span id="room-code">#{{gameCode | uppercase}}</span>
+</div>

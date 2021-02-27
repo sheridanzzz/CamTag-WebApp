@@ -1,0 +1,21 @@
+<!-- NOTIFICATIONS AREA WHEN THERE ARE NOTIFICATIONS TO DISPLAY -->
+<div id="notifications-panel" *ngIf="notifications.length > 0">
+    <div class="notification" *ngFor="let notification of notifications">
+        <h1 class="notification-heading">{{notification.type}}</h1>
+        <span class="notification-message">{{notification.messageText}}</span>
+    </div>
+</div>
+<!-- NOTIFICATIONS AREA WHEN THERE ARE NO NOTIFICATIONS TO DISPLAY -->
+<div id="notifications-panel" *ngIf="notifications.length == 0">
+    <div class="notification">
+        <h1 class="notification-heading">ALL READ</h1>
+        <span class="notification-message">No more notifications to show.</span>
+    </div>
+</div>
+<label *ngIf="!getAll" id="hide-label">UNREAD</label>
+<label *ngIf="getAll" id="hide-label">ALL</label>
+<label id="hide-switch" class="switch">
+    <input type="checkbox" [(ngModel)]="getAll" (ngModelChange)="getNotifications()">
+    <span class="slider"></span>
+</label>
+<button id="close-notification-button" class="close" (click)=closeModal()>CLOSE</button>

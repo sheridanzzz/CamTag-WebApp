@@ -1,0 +1,19 @@
+<div class="grid-main">
+    <!-- CAMERA FEED -->
+    <video id="camera-feed" [style.display]="pictureTaken ? 'none' : 'inherit'" #hardwareVideo autoplay playsinline></video>
+    <!-- CAMERA CAPTURE -->
+    <canvas id="camera-capture"></canvas>
+    <!-- PLAYER SELFIE -->
+    <img id="player-selfie" [style.display]="pictureTaken ? 'inherit' : 'none'" [src]="imgURL" alt="Camera Capture" />
+    <div class="loader" [style.display]="!isStreaming ? 'inherit' : 'none'"></div> 
+    <!-- CAPTURE SELFIE -->
+    <button id="capture-button" type="button" *ngIf="pictureTaken" (click)="takeAgain()">TAKE AGAIN</button>
+    <!-- TAKE SELFIE -->
+    <button id="submit-button" type="button" *ngIf="!pictureTaken" [disabled]="!isStreaming" (click)="takePicture()">TAKE SELFIE</button>
+    <!-- SUBMIT SELFIE -->
+    <button id="submit-button" type="button" class="primary-button" *ngIf="pictureTaken" (click)="accept()">USE SELFIE</button>
+    <!-- BACK -->
+    <button id="back-button" type="button" (click)="back()">
+        <img id="back-button-img" src="assets/back-button.svg" alt="Back Button" />
+    </button>
+</div>

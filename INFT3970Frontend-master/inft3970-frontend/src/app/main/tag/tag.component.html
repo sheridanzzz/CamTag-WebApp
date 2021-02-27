@@ -1,0 +1,20 @@
+<div id="tag-panel" *ngIf="!loadingPlayers">
+    <!-- TAG PICTURE -->
+    <label id="tag-label">TAG PICTURE</label>
+    <img id="tag-image" [src]="picture" alt="Tag Picture">
+    <!-- SELFIE PICTURE -->
+    <label id="selfie-label">SELFIE PICTURE</label>
+    <img id="selfie-image" *ngIf="selectedPlayer" [src]="selectedPlayer.smallSelfie" alt="Selfie Picture">
+    <!-- SELECTION -->
+    <select id="select-player-tag" [(ngModel)]="selectedPlayer">
+        <option selected disabled hidden [ngValue]="null">CHOOSE PLAYER TO TAG</option>
+        <option *ngFor='let player of players' [ngValue]="player">{{player.nickname | uppercase}}</option>
+    </select>
+</div>
+<!-- TAG BUTTON -->
+<button id="tag-button" class="button-take primary-button" (click)="sendTag()" [disabled]="uploading || !selectedPlayer">
+    <span *ngIf="!uploading">TAG</span>
+    <span *ngIf="uploading">UPLOADING...</span>
+</button>
+<!-- CLOSE BUTTON -->
+<button id="close-button" class="button-close" (click)="closeModal()"><span>CLOSE</span></button>

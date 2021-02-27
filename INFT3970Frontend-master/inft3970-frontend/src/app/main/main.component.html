@@ -1,0 +1,63 @@
+<!-- MAIN SCREEN -->
+<div class="grid-main">
+    <div class="loader" [style.display]="!isStreaming ? 'inherit' : 'none'"></div>
+
+    <!-- NOTIFICATION BUTTON -->
+    <button id="notification-button" type="button" (click)="showNotificationModal = true">
+        <img id="notification-button-img" src="assets/notification-button.svg" alt="Notification Button" />
+        <span id="notification-count">{{notificationCount}}</span>
+    </button>
+
+    <!-- MENU BUTTON -->
+    <button id="menu-button" type="button" (click)="showMenuModal = true">
+        <img id="menu-button-img" src="assets/menu-button.svg" alt="Menu Button" />
+    </button>
+
+    <!-- CAMERA BUTTON -->
+    <button id="camera-button" type="button" (click)="takePicture()" [disabled]="isDisabled || !isStreaming || ammoCount < 1">
+        <img id="camera-button-img" src="assets/camera-button.svg" alt="Camera Button" />
+        <span id="camera-count">{{ammoCount}}</span>
+    </button>
+
+    <!-- MAP BUTTON -->
+    <button id="map-button" type="button" (click)="showMapModal = true">
+        <img id="map-button-img" src="assets/map-button.svg" alt="Map Button" />
+    </button>
+
+    <!-- CAMERA FEED -->
+    <video id="camera-feed" #hardwareVideo muted autoplay playsinline></video>
+
+    <!-- CAMERA CAPTURE -->
+    <canvas id="camera-capture"></canvas>
+
+</div>
+
+<!-- NOTIFICATION SCREEN -->
+<div *ngIf="showNotificationModal" id="notificationModal" class="modal" (click)="hideModal($event, 'notificationModal')">
+    <notifications-page (close)="showNotificationModal = false"></notifications-page>
+</div>
+
+<!-- TAG SCREEN -->
+<div *ngIf="showTagModal" id="cameraModal" class="modal" (click)="hideModal($event, 'cameraModal')">
+    <tag-page (close)="showTagModal = false"></tag-page>
+</div>
+
+<!-- MAP SCREEN -->
+<div *ngIf="showMapModal" id="mapModal" class="modal" (click)="hideModal($event, 'mapModal')">
+    <maps-page (close)="showMapModal = false"></maps-page>
+</div>
+
+<!-- MENU SCREEN -->
+<div *ngIf="showMenuModal" id="menuModal" class="modal" (click)="hideModal($event, 'menuModal')">
+    <div class="menu-modal-content">
+
+        <!-- CLOSE MENU BUTTON -->
+        <button id="close-menu-button" class="menu-modal-option" type="button" (click)="showMenuModal = false">CLOSE MENU</button>
+
+        <!-- SCORE BOARD BUTTON -->
+        <button id="score-board-button" class="menu-modal-option" type="button" routerLink="/scoreboard">SCORE BOARD</button>
+
+        <!-- LEAVE GAME BUTTON -->
+        <button id="leave-game-button" class="menu-modal-option" type="button" (click)="leaveGame()">LEAVE GAME</button>
+    </div>
+</div>
